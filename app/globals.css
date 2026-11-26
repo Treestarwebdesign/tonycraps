@@ -1,0 +1,244 @@
+/* Tony Craps – statische versie. Stijl nagebouwd op het oude "BigFormat" WordPress-thema. */
+:root {
+  --accent: #29abe2;
+  --text: #555;
+  --sidebar: 220px;
+  --font: var(--font-pt), 'PT Sans', arial, sans-serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+body {
+  background: #000;
+  color: var(--text);
+  font: 400 12px/18px var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent); text-decoration: underline; }
+::selection { background: var(--accent); color: #fff; }
+img { max-width: 100%; display: block; }
+button { font: inherit; cursor: pointer; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* ---------- Zijbalk ---------- */
+.navcontainer {
+  position: fixed; inset: 0 auto 0 0; z-index: 30;
+  width: var(--sidebar); padding: 0 20px 20px;
+  background: #fff;
+}
+.logo { margin-top: 20px; }
+.logo img { width: 180px; height: auto; }
+.nav ul { list-style: none; margin: 30px 0 0; padding: 0; }
+.nav a {
+  display: block; padding: 9.75px 19.5px 9.75px 0;
+  color: var(--text); font-size: 13px; letter-spacing: 1px; text-transform: uppercase;
+  transition: color .2s;
+}
+.nav a:hover, .nav .current a { color: var(--accent); text-decoration: none; }
+.menutoggle { display: none; }
+
+.mainbody { margin-left: var(--sidebar); min-height: 100vh; position: relative; }
+
+/* Stippeltextuur over de foto's */
+.lines {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: url(/images/dotpattern.png) repeat;
+}
+
+/* ---------- Fullscreen slideshow ---------- */
+.slideshow { position: fixed; inset: 0 0 0 var(--sidebar); z-index: 31; overflow: hidden; background: #000; }
+.slides { list-style: none; margin: 0; padding: 0; position: absolute; inset: 0; }
+.slides li {
+  position: absolute; inset: 0; opacity: 0; visibility: hidden;
+  transition: opacity 1s ease, visibility 0s linear 1s;
+}
+.slides li.active { opacity: 1; visibility: visible; transition: opacity 1s ease; z-index: 0; }
+.slides a, .slides img { display: block; width: 100%; height: 100%; }
+.slides img { object-fit: cover; object-position: center; user-select: none; }
+
+.captioncontainer {
+  position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  display: flex; align-items: center; justify-content: center; padding: 0 60px;
+}
+.caption {
+  max-width: 600px; color: #fff; text-align: center; pointer-events: auto;
+  animation: fadein 1s ease;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, .35);
+}
+.subheadline span { font-size: 16px; line-height: 16px; }
+.bgwrap h2 {
+  margin: 12px 0 18px; font-size: 62px; line-height: .9; font-weight: 400;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.bgwrap strong { font-weight: 400; }
+
+.button {
+  display: inline-block; background: var(--accent); color: #fff;
+  font-size: 10px; font-weight: 700; padding: 8px 10px 9px; border: 0;
+  text-transform: uppercase; letter-spacing: 1px; transition: background .2s, color .2s;
+}
+.button:hover { background: #fff; color: var(--accent); text-decoration: none; }
+.button.dark { font-size: 12px; padding: 9px 14px; }
+.button.dark:hover { background: #222; color: #fff; }
+
+.arrow {
+  position: absolute; top: 50%; z-index: 3; width: 50px; height: 70px; margin-top: -35px;
+  background: none; border: 0; opacity: .7; transition: opacity .2s;
+}
+.arrow:hover { opacity: 1; }
+.arrow::before {
+  content: ''; position: absolute; top: 50%; left: 50%; width: 18px; height: 18px;
+  border: solid #fff; border-width: 0 2px 2px 0;
+}
+.arrow.prev { left: 10px; }
+.arrow.prev::before { transform: translate(-30%, -50%) rotate(135deg); }
+.arrow.next { right: 10px; }
+.arrow.next::before { transform: translate(-70%, -50%) rotate(-45deg); }
+
+/* Bediening linksonder in de zijbalk, zoals op de oude site */
+.controls {
+  position: fixed; left: 0; bottom: 20px; z-index: 31; width: var(--sidebar);
+  display: flex; align-items: center; justify-content: center; gap: 12px; color: #999;
+}
+.slidecounter { font-size: 11px; letter-spacing: 1px; }
+.playpause {
+  width: 26px; height: 26px; border-radius: 50%; border: 2px solid #999; background: #fff; position: relative;
+}
+.playpause::before {
+  content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-35%, -50%);
+  border-style: solid; border-width: 5px 0 5px 8px; border-color: transparent transparent transparent #999;
+}
+.playpause.is-playing::before {
+  transform: translate(-50%, -50%); width: 8px; height: 10px; border: solid #999; border-width: 0 3px;
+}
+.progress {
+  position: absolute; left: 0; bottom: 0; z-index: 3; height: 3px; width: 100%;
+  background: var(--accent); transform-origin: left; animation: progress linear forwards;
+}
+.slide-list {
+  position: absolute; top: 20px; right: 20px; z-index: 3; list-style: none; margin: 0; padding: 0; display: flex; gap: 6px;
+}
+.slide-list button {
+  width: 10px; height: 10px; border-radius: 50%; border: 0; padding: 0;
+  background: rgba(255, 255, 255, .5);
+}
+.slide-list .current button, .slide-list button:hover { background: #fff; }
+
+/* "More info" op projectpagina's */
+.projectinfo { position: absolute; top: 20px; left: 20px; z-index: 4; max-width: min(600px, calc(100% - 40px)); }
+.toggleproject {
+  width: 30px; height: 30px; border-radius: 50%; border: 0; background: #111; position: relative; vertical-align: middle;
+}
+.toggleproject::before, .toggleproject::after {
+  content: ''; position: absolute; top: 50%; left: 50%; background: #fff; transform: translate(-50%, -50%);
+}
+.toggleproject::before { width: 12px; height: 2px; }
+.toggleproject::after { width: 2px; height: 12px; transition: transform .2s; }
+.projectinfo.open .toggleproject::after { transform: translate(-50%, -50%) scaleY(0); }
+.tooltip {
+  display: inline-block; margin-left: 8px; vertical-align: middle;
+  background: #111; color: #fff; font-size: 10px; padding: 3px 8px; position: relative;
+}
+.tooltip::before {
+  content: ''; position: absolute; left: -5px; top: 50%; margin-top: -5px;
+  border-style: solid; border-width: 5px 5px 5px 0; border-color: transparent #111 transparent transparent;
+}
+.projectcontent { margin-top: 20px; animation: fadein .3s ease; }
+.projectcontent .pagename { margin: 0 0 15px 15px; }
+.contentwrap { background: #fff; padding: 20px; font-size: 13px; line-height: 20px; }
+.contentwrap p { margin: 0 0 10px; }
+.contentwrap p:last-child { margin: 0; }
+
+/* ---------- Inhoudspagina's (projecten, contact) ---------- */
+.page {
+  min-height: 100vh; position: relative;
+  background: #000 center / cover no-repeat fixed;
+}
+.contentarea { position: relative; z-index: 2; max-width: 804px; padding: 20px 20px 60px; }
+.pagename h1 { margin: 20px 0 20px 15px; font-weight: 400; line-height: 1.4; }
+.pagename span {
+  background: rgba(0, 0, 0, .5); color: #fff; font-size: 40px; padding: 8px 0;
+  text-transform: uppercase; line-height: 1.5;
+  box-shadow: 15px 0 0 rgba(0, 0, 0, .5), -15px 0 0 rgba(0, 0, 0, .5);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.smallpage { max-width: 600px; }
+.pagebg { background: #fff; padding: 20px; }
+.pagebg .h3 { font-size: 16px; color: #222; margin: 0 0 10px; font-weight: 700; }
+address { font-style: normal; margin-bottom: 20px; font-size: 13px; line-height: 20px; }
+
+/* Filter + grid */
+.filterwrap { background: #fff; padding: 10px; margin-bottom: 20px; }
+.filter { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.filter button, .filtersort {
+  border: 0; background: none; color: var(--text); padding: 3px 6px; font-size: 12px;
+}
+.filter button:hover, .filter button.active { background: var(--accent); color: #fff; }
+.filtersort { padding: 0; color: #777; }
+.filtersort:hover { color: var(--accent); }
+
+.portfoliocontainer { display: grid; grid-template-columns: repeat(auto-fill, minmax(222px, 1fr)); gap: 20px; }
+.portfoliothumb { background: #fff; padding: 10px; text-align: center; animation: fadein .4s ease; }
+.portfolioitem { display: block; overflow: hidden; aspect-ratio: 4 / 3; background: #eee; }
+.portfolioitem img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s, opacity .3s; }
+.portfolioitem:hover img { transform: scale(1.04); opacity: .85; }
+.portfoliothumb h2 { margin: 10px 0 2px; font-size: 14px; font-weight: 400; }
+.portfoliothumb h2 a { color: #222; }
+.portfoliothumb h2 a:hover { color: var(--accent); text-decoration: none; }
+.portfoliothumb p { margin: 0; }
+
+/* Contactformulier */
+.contactform label { display: block; margin: 0 0 4px; font-weight: 700; color: #333; }
+.contactform input, .contactform textarea {
+  width: 100%; border: 1px solid #ddd; background: #fafafa; padding: 8px; margin: 0 0 14px;
+  font: inherit; font-size: 13px; color: #333;
+}
+.contactform input:focus, .contactform textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; background: #fff; }
+.formrow { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+.contactform .hp { position: absolute; left: -9999px; }
+.formmessage { padding: 10px 12px; margin: 14px 0 0; font-size: 13px; }
+.formmessage.ok { background: #e6f6fd; color: #135e7e; }
+.formmessage.error { background: #fdecea; color: #8a1f11; }
+
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* ---------- Mobiel ---------- */
+@media (max-width: 767px) {
+  :root { --sidebar: 0px; }
+  .navcontainer {
+    inset: 0 0 auto 0; width: auto; height: 60px; padding: 0 15px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { margin: 0; }
+  .logo img { width: 140px; }
+  .menutoggle { display: block; background: none; border: 0; font-size: 24px; color: #555; padding: 6px; }
+  .nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; padding: 0 15px 10px; box-shadow: 0 8px 16px rgba(0,0,0,.2); }
+  .navcontainer.open .nav { display: block; }
+  .nav ul { margin: 0; }
+  .nav li + li { border-top: 1px solid #eee; }
+  .mainbody { margin-left: 0; padding-top: 60px; }
+  .slideshow { inset: 60px 0 0 0; z-index: 1; }
+  .controls { left: 50%; transform: translateX(-50%); width: auto; background: rgba(255,255,255,.85); padding: 6px 12px; border-radius: 20px; }
+  .bgwrap h2 { font-size: 36px; }
+  .subheadline span { font-size: 13px; }
+  .page { background-attachment: scroll; }
+  .pagename span { font-size: 28px; }
+  .formrow { grid-template-columns: 1fr; }
+  .arrow { width: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slides li, .caption, .portfoliothumb, .portfolioitem img { transition: none; animation: none; }
+}
+
+/* Binnen de slideshow blijft de textuur binnen het fotovlak (niet over de zijbalk) */
+.slideshow .lines { position: absolute; }
+.controls { color: #777; }
