@@ -1,0 +1,26 @@
+name: Foto's ophalen van de oude site
+
+# Eenmalig handmatig starten (tab Actions -> "Run workflow"), zolang de oude WordPress-site nog online is.
+# Downloadt de foto's, het logo en de favicon naar public/ en commit ze in de repo.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/fetch-images.mjs
+      - name: Commit foto's
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public
+          git diff --cached --quiet && echo "Niets te committen" || git commit -m "Foto's van de oude site toegevoegd"
+          git push
