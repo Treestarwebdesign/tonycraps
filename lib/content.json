@@ -1,0 +1,482 @@
+{
+ "projects": [
+  {
+   "slug": "v7",
+   "title": "V7",
+   "category": "verbouwingen",
+   "description": "Verbouwing Heesterhoef",
+   "images": [
+    "/wp-content/uploads/2013/01/foto130.jpg",
+    "/wp-content/uploads/2013/01/foto230.jpg",
+    "/wp-content/uploads/2013/01/foto330.jpg",
+    "/wp-content/uploads/2013/01/foto75.jpg"
+   ]
+  },
+  {
+   "slug": "v6",
+   "title": "V6",
+   "category": "verbouwingen",
+   "description": "Achterbouw + verbouwing",
+   "images": [
+    "/wp-content/uploads/2013/01/foto129.jpg",
+    "/wp-content/uploads/2013/01/foto229.jpg",
+    "/wp-content/uploads/2013/01/foto329.jpg",
+    "/wp-content/uploads/2013/01/foto423.jpg",
+    "/wp-content/uploads/2013/01/foto522.jpg"
+   ]
+  },
+  {
+   "slug": "v5",
+   "title": "V5",
+   "category": "verbouwingen",
+   "description": "Moderne verbouwing van oude boerderij",
+   "images": [
+    "/wp-content/uploads/2013/01/foto328.jpg",
+    "/wp-content/uploads/2013/01/foto422.jpg",
+    "/wp-content/uploads/2013/01/foto74.jpg",
+    "/wp-content/uploads/2013/01/foto228.jpg"
+   ]
+  },
+  {
+   "slug": "v4",
+   "title": "V4",
+   "category": "verbouwingen",
+   "description": "Verbouwing restaurant Geel",
+   "images": [
+    "/wp-content/uploads/2013/01/foto128.jpg",
+    "/wp-content/uploads/2013/01/foto227.jpg",
+    "/wp-content/uploads/2013/01/foto327.jpg",
+    "/wp-content/uploads/2013/01/foto421.jpg",
+    "/wp-content/uploads/2013/01/foto521.jpg"
+   ]
+  },
+  {
+   "slug": "v3",
+   "title": "V3",
+   "category": "verbouwingen",
+   "description": "Zeer moderne verbouwing",
+   "images": [
+    "/wp-content/uploads/2013/01/foto127.jpg",
+    "/wp-content/uploads/2013/01/foto226.jpg",
+    "/wp-content/uploads/2013/01/foto326.jpg",
+    "/wp-content/uploads/2013/01/foto420.jpg",
+    "/wp-content/uploads/2013/01/foto520.jpg"
+   ]
+  },
+  {
+   "slug": "v2",
+   "title": "V2",
+   "category": "verbouwingen",
+   "description": "Verbouwing achterbouw",
+   "images": [
+    "/wp-content/uploads/2013/01/foto66.jpg",
+    "/wp-content/uploads/2013/01/foto325.jpg",
+    "/wp-content/uploads/2013/01/foto418.jpg",
+    "/wp-content/uploads/2013/01/foto82.jpg",
+    "/wp-content/uploads/2013/01/foto126.jpg"
+   ]
+  },
+  {
+   "slug": "v1",
+   "title": "V1",
+   "category": "verbouwingen",
+   "description": "Verbouwing met veel houttechnieken en moderne indeling",
+   "images": [
+    "/wp-content/uploads/2013/01/foto142.jpg",
+    "/wp-content/uploads/2013/01/foto125.jpg",
+    "/wp-content/uploads/2013/01/foto324.jpg",
+    "/wp-content/uploads/2013/01/foto519.jpg",
+    "/wp-content/uploads/2013/01/foto225.jpg"
+   ]
+  },
+  {
+   "slug": "k8",
+   "title": "K8",
+   "category": "klassiek",
+   "description": "Klassieke woning",
+   "images": [
+    "/wp-content/uploads/2013/01/foto124.jpg",
+    "/wp-content/uploads/2013/01/foto224.jpg",
+    "/wp-content/uploads/2013/01/foto323.jpg",
+    "/wp-content/uploads/2013/01/foto81.jpg",
+    "/wp-content/uploads/2013/01/foto65.jpg"
+   ]
+  },
+  {
+   "slug": "k7",
+   "title": "K7",
+   "category": "klassiek",
+   "description": "Klassieke boerderij met houtafwerking",
+   "images": [
+    "/wp-content/uploads/2013/01/foto123.jpg",
+    "/wp-content/uploads/2013/01/foto223.jpg",
+    "/wp-content/uploads/2013/01/foto417.jpg",
+    "/wp-content/uploads/2013/01/foto518.jpg",
+    "/wp-content/uploads/2013/01/foto102.jpg",
+    "/wp-content/uploads/2013/01/foto1110.jpg"
+   ]
+  },
+  {
+   "slug": "k6",
+   "title": "K6",
+   "category": "klassiek",
+   "description": "Klassieke boerderij",
+   "images": [
+    "/wp-content/uploads/2013/01/foto222.jpg",
+    "/wp-content/uploads/2013/01/foto322.jpg",
+    "/wp-content/uploads/2013/01/foto416.jpg",
+    "/wp-content/uploads/2013/01/foto517.jpg",
+    "/wp-content/uploads/2013/01/foto101.jpg",
+    "/wp-content/uploads/2013/01/foto132.jpg"
+   ]
+  },
+  {
+   "slug": "k5",
+   "title": "K5",
+   "category": "klassiek",
+   "description": "Klassieke woning",
+   "images": [
+    "/wp-content/uploads/2013/01/foto122.jpg",
+    "/wp-content/uploads/2013/01/foto221.jpg",
+    "/wp-content/uploads/2013/01/foto321.jpg",
+    "/wp-content/uploads/2013/01/foto415.jpg",
+    "/wp-content/uploads/2013/01/foto516.jpg"
+   ]
+  },
+  {
+   "slug": "k4",
+   "title": "K4",
+   "category": "klassiek",
+   "description": "Klassieke woning met stenen gevels",
+   "images": [
+    "/wp-content/uploads/2013/01/foto120.jpg"
+   ]
+  },
+  {
+   "slug": "k3",
+   "title": "K3",
+   "category": "klassiek",
+   "description": "Klassieke woning met veel houtafwerking",
+   "images": [
+    "/wp-content/uploads/2013/01/foto220.jpg",
+    "/wp-content/uploads/2013/01/foto320.jpg",
+    "/wp-content/uploads/2013/01/foto414.jpg",
+    "/wp-content/uploads/2013/01/foto515.jpg"
+   ]
+  },
+  {
+   "slug": "k2",
+   "title": "K2",
+   "category": "klassiek",
+   "description": "Klassieke woningbouw – School",
+   "images": [
+    "/wp-content/uploads/2013/01/foto119.jpg",
+    "/wp-content/uploads/2013/01/foto219.jpg",
+    "/wp-content/uploads/2013/01/foto319.jpg",
+    "/wp-content/uploads/2013/01/foto413.jpg"
+   ]
+  },
+  {
+   "slug": "k1",
+   "title": "K1",
+   "category": "klassiek",
+   "description": "Klassieke woningbouw",
+   "images": [
+    "/wp-content/uploads/2013/01/foto118.jpg",
+    "/wp-content/uploads/2013/01/foto218.jpg",
+    "/wp-content/uploads/2013/01/foto318.jpg",
+    "/wp-content/uploads/2013/01/foto412.jpg",
+    "/wp-content/uploads/2013/01/foto514.jpg"
+   ]
+  },
+  {
+   "slug": "i6",
+   "title": "I6",
+   "category": "industriebouw",
+   "description": "Joris ijs kantoor",
+   "images": [
+    "/wp-content/uploads/2013/01/foto117.jpg",
+    "/wp-content/uploads/2013/01/foto217.jpg",
+    "/wp-content/uploads/2013/01/foto317.jpg"
+   ]
+  },
+  {
+   "slug": "i5",
+   "title": "I5",
+   "category": "industriebouw",
+   "description": "Mercedes garage",
+   "images": [
+    "/wp-content/uploads/2013/01/foto116.jpg",
+    "/wp-content/uploads/2013/01/foto216.jpg",
+    "/wp-content/uploads/2013/01/foto316.jpg",
+    "/wp-content/uploads/2013/01/foto513.jpg"
+   ]
+  },
+  {
+   "slug": "i4",
+   "title": "I4",
+   "category": "industriebouw",
+   "description": "Van Meeuwen industriehal + kantoren",
+   "images": [
+    "/wp-content/uploads/2013/01/foto315.jpg",
+    "/wp-content/uploads/2013/01/foto215.jpg",
+    "/wp-content/uploads/2013/01/foto411.jpg"
+   ]
+  },
+  {
+   "slug": "i3",
+   "title": "I3",
+   "category": "industriebouw",
+   "description": "Industriebouw met moderne kantoren en houtafwerking",
+   "images": [
+    "/wp-content/uploads/2013/01/foto314.jpg",
+    "/wp-content/uploads/2013/01/foto115.jpg",
+    "/wp-content/uploads/2013/01/foto64.jpg",
+    "/wp-content/uploads/2013/01/foto73.jpg",
+    "/wp-content/uploads/2013/01/foto8.jpg",
+    "/wp-content/uploads/2013/01/foto10.jpg"
+   ]
+  },
+  {
+   "slug": "i2",
+   "title": "I2",
+   "category": "industriebouw",
+   "description": "Kantoorgebouwen",
+   "images": [
+    "/wp-content/uploads/2013/01/foto114.jpg"
+   ]
+  },
+  {
+   "slug": "i1",
+   "title": "I1",
+   "category": "industriebouw",
+   "description": "Industriehal met bijhorend kantoor in moderne structuur",
+   "images": [
+    "/wp-content/uploads/2013/01/foto512.jpg",
+    "/wp-content/uploads/2013/01/foto214.jpg",
+    "/wp-content/uploads/2013/01/foto313.jpg",
+    "/wp-content/uploads/2013/01/foto410.jpg"
+   ]
+  },
+  {
+   "slug": "h15",
+   "title": "H15",
+   "category": "hedendaags",
+   "description": "Houtskeletbouw in Bonheiden",
+   "images": [
+    "/wp-content/uploads/2013/01/foto113.jpg",
+    "/wp-content/uploads/2013/01/foto213.jpg",
+    "/wp-content/uploads/2013/01/foto312.jpg",
+    "/wp-content/uploads/2013/01/foto511.jpg",
+    "/wp-content/uploads/2013/01/foto131.jpg"
+   ]
+  },
+  {
+   "slug": "h14",
+   "title": "H14",
+   "category": "hedendaags",
+   "description": "Moderne betonstructuur woning met hout en aluminium elementen",
+   "images": [
+    "/wp-content/uploads/2013/01/foto510.jpg",
+    "/wp-content/uploads/2013/01/foto212.jpg",
+    "/wp-content/uploads/2013/01/foto311.jpg",
+    "/wp-content/uploads/2013/01/foto49.jpg"
+   ]
+  },
+  {
+   "slug": "h13",
+   "title": "H13",
+   "category": "hedendaags",
+   "description": "Moderne woning met tuin en houtafwerking",
+   "images": [
+    "/wp-content/uploads/2013/01/foto48.jpg",
+    "/wp-content/uploads/2013/01/foto211.jpg",
+    "/wp-content/uploads/2013/01/foto310.jpg",
+    "/wp-content/uploads/2013/01/foto59.jpg",
+    "/wp-content/uploads/2013/01/foto63.jpg"
+   ]
+  },
+  {
+   "slug": "h12",
+   "title": "H12",
+   "category": "hedendaags",
+   "description": "Ontwerpen Hedendaagse woningbouwprojecten",
+   "images": [
+    "/wp-content/uploads/2013/01/foto111.jpg",
+    "/wp-content/uploads/2013/01/foto210.jpg",
+    "/wp-content/uploads/2013/01/foto39.jpg",
+    "/wp-content/uploads/2013/01/foto58.jpg"
+   ]
+  },
+  {
+   "slug": "h11",
+   "title": "H11",
+   "category": "hedendaags",
+   "description": "Maquette hedendaags project",
+   "images": [
+    "/wp-content/uploads/2013/01/foto57.jpg",
+    "/wp-content/uploads/2013/01/foto29.jpg",
+    "/wp-content/uploads/2013/01/foto38.jpg",
+    "/wp-content/uploads/2013/01/foto47.jpg"
+   ]
+  },
+  {
+   "slug": "h10",
+   "title": "H10",
+   "category": "hedendaags",
+   "description": "",
+   "images": [
+    "/wp-content/uploads/2013/01/foto18.jpg",
+    "/wp-content/uploads/2013/01/foto28.jpg",
+    "/wp-content/uploads/2013/01/foto37.jpg",
+    "/wp-content/uploads/2013/01/foto46.jpg"
+   ]
+  },
+  {
+   "slug": "h9",
+   "title": "H9",
+   "category": "hedendaags",
+   "description": "",
+   "images": [
+    "/wp-content/uploads/2013/01/foto17.jpg",
+    "/wp-content/uploads/2013/01/foto27.jpg",
+    "/wp-content/uploads/2013/01/foto36.jpg",
+    "/wp-content/uploads/2013/01/foto56.jpg",
+    "/wp-content/uploads/2013/01/foto62.jpg"
+   ]
+  },
+  {
+   "slug": "h8",
+   "title": "H8",
+   "category": "hedendaags",
+   "description": "Moderne woning in Berkebossen, Mol",
+   "images": [
+    "/wp-content/uploads/2013/01/foto16.jpg",
+    "/wp-content/uploads/2013/01/foto26.jpg",
+    "/wp-content/uploads/2013/01/foto45.jpg"
+   ]
+  },
+  {
+   "slug": "h7",
+   "title": "H7",
+   "category": "hedendaags",
+   "description": "Moderne betonwoning met praktijk in Mol",
+   "images": [
+    "/wp-content/uploads/2013/01/foto121.jpg",
+    "/wp-content/uploads/2013/01/foto25.jpg",
+    "/wp-content/uploads/2013/01/foto55.jpg",
+    "/wp-content/uploads/2013/01/foto61.jpg",
+    "/wp-content/uploads/2013/01/foto91.jpg"
+   ]
+  },
+  {
+   "slug": "h6",
+   "title": "H6",
+   "category": "hedendaags",
+   "description": "Open hedendaagse woning met bijhorende tuin",
+   "images": [
+    "/wp-content/uploads/2013/01/foto15.jpg",
+    "/wp-content/uploads/2013/01/foto24.jpg",
+    "/wp-content/uploads/2013/01/foto44.jpg",
+    "/wp-content/uploads/2013/01/foto72.jpg"
+   ]
+  },
+  {
+   "slug": "h5",
+   "title": "H5",
+   "category": "hedendaags",
+   "description": "Moderne woning met veel gebruik van hout, zowel binnen als buiten.",
+   "images": [
+    "/wp-content/uploads/2013/01/foto14.jpg",
+    "/wp-content/uploads/2013/01/foto23.jpg",
+    "/wp-content/uploads/2013/01/foto34.jpg",
+    "/wp-content/uploads/2013/01/foto43.jpg",
+    "/wp-content/uploads/2013/01/foto54.jpg"
+   ]
+  },
+  {
+   "slug": "h4",
+   "title": "H4",
+   "category": "hedendaags",
+   "description": "Hedendaagse apotheek + woning in Meerhout",
+   "images": [
+    "/wp-content/uploads/2013/01/foto13.jpg",
+    "/wp-content/uploads/2013/01/foto22.jpg",
+    "/wp-content/uploads/2013/01/foto33.jpg",
+    "/wp-content/uploads/2013/01/foto42.jpg",
+    "/wp-content/uploads/2013/01/foto53.jpg",
+    "/wp-content/uploads/2013/01/foto71.jpg"
+   ]
+  },
+  {
+   "slug": "h3",
+   "title": "H3",
+   "category": "hedendaags",
+   "description": "Sociale woningen met hedendaagse architectuur",
+   "images": [
+    "/wp-content/uploads/2013/01/foto1.jpg",
+    "/wp-content/uploads/2013/01/foto21.jpg",
+    "/wp-content/uploads/2013/01/foto32.jpg",
+    "/wp-content/uploads/2013/01/foto41.jpg",
+    "/wp-content/uploads/2013/01/foto52.jpg"
+   ]
+  },
+  {
+   "slug": "h2",
+   "title": "H2",
+   "category": "hedendaags",
+   "description": "Hedendaagse woningbouw met dakterras en bijhorend zwembad",
+   "images": [
+    "/wp-content/uploads/2013/01/foto31.jpg",
+    "/wp-content/uploads/2013/01/foto2.jpg",
+    "/wp-content/uploads/2013/01/foto7.jpg",
+    "/wp-content/uploads/2013/01/foto51.jpg",
+    "/wp-content/uploads/2013/01/foto4.jpg"
+   ]
+  },
+  {
+   "slug": "h1",
+   "title": "H1",
+   "category": "hedendaags",
+   "description": "Hedendaagse woning in Meerhout",
+   "images": [
+    "/wp-content/uploads/2013/01/foto3.jpg",
+    "/wp-content/uploads/2013/01/foto11.jpg",
+    "/wp-content/uploads/2013/01/foto12.jpg",
+    "/wp-content/uploads/2013/01/foto9.jpg",
+    "/wp-content/uploads/2013/01/foto5.jpg",
+    "/wp-content/uploads/2013/01/foto6.jpg"
+   ]
+  }
+ ],
+ "featured": [
+  {
+   "slug": "hedendaags",
+   "title": "Hedendaags",
+   "caption": "Hedendaagse architectuur",
+   "image": "/wp-content/uploads/2012/06/hedendaags.jpg",
+   "thumb": "/wp-content/uploads/2012/06/hedendaags-480x375.jpg"
+  },
+  {
+   "slug": "industriebouw",
+   "title": "Industriebouw",
+   "caption": "Industriebouw",
+   "image": "/wp-content/uploads/2012/06/industriebouw.jpg",
+   "thumb": "/wp-content/uploads/2012/06/industriebouw-480x375.jpg"
+  },
+  {
+   "slug": "verbouwingen",
+   "title": "Verbouwingen",
+   "caption": "Verbouwingen",
+   "image": "/wp-content/uploads/2012/06/verbouwingen.jpg",
+   "thumb": "/wp-content/uploads/2012/06/verbouwingen-480x375.jpg"
+  },
+  {
+   "slug": "klassieke-woningbouw",
+   "title": "Klassieke woningbouw",
+   "caption": "Klassieke woningen",
+   "image": "/wp-content/uploads/2012/06/klassiek.jpg",
+   "thumb": "/wp-content/uploads/2012/06/klassiek-480x375.jpg"
+  }
+ ]
+}
