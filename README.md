@@ -37,7 +37,21 @@ npm run preview      # out/ lokaal testen op http://localhost:4000
 
 ## Deployen op Cloudways
 
-### Met het deploy-script (SSH + rsync)
+### Via Git (aanbevolen)
+
+Bij elke push naar `main` bouwt GitHub Actions de site en zet de inhoud van `out/` (incl. `.htaccess`)
+op de branch **`deploy`** (workflow `.github/workflows/deploy-branch.yml`).
+
+Eenmalig instellen in Cloudways → Application → *Deployment via GIT*:
+1. Kopieer de gegenereerde publieke sleutel (*View SSH Keys*) en voeg die in GitHub toe onder
+   repo → Settings → Deploy keys (alleen lezen).
+2. GIT Remote Address: `git@github.com:Treestarwebdesign/tonycraps.git` → *Authenticate*.
+3. Branch: `deploy`, Deployment Path: `public_html/` → *Start deployment*.
+
+Daarna: wijziging naar `main` pushen, wachten tot de workflow klaar is, en in Cloudways op *Pull* klikken.
+
+
+### Alternatief: deploy-script (SSH + rsync)
 
 1. Kopieer `.deploy.env.example` naar `.deploy.env` en vul `DEPLOY_APP` in (de map-id van de app onder `~/applications/`).
 2. `npm run deploy -- --dry-run` toont wat er zou veranderen.
