@@ -76,7 +76,15 @@ Daarna: wijziging naar `main` pushen, wachten tot de workflow klaar is, en in Cl
 > Cloudways gebruikt Nginx vóór Apache; `.htaccess` wordt door Apache gewoon gelezen.
 > Elke andere statische host (Netlify, Cloudflare Pages, Vercel, gewone Apache-hosting) werkt ook: upload `out/`.
 
-## .htaccess (`public/.htaccess`, komt automatisch in `out/`)
+## Redirects van oude URL's
+
+De Cloudways-server draait enkel Nginx, dus `.htaccess` wordt daar **niet** gelezen.
+Daarom staan er voor de oude WordPress-URL's kleine doorverwijspagina's in `public/`
+(`/mobile/`, `/mobile/projecten/`, `/projecten/page/2/` en `/3/`, `/projecten/projecten/`, `/portfolio/`, `/feed/`)
+met een directe meta-refresh en canonical-tag. Google behandelt dat als een permanente redirect.
+https/www-doorverwijzing regel je in Cloudways (SSL → Enforce HTTPS, Domain Management → primair domein).
+
+## .htaccess (`public/.htaccess`, enkel voor Apache-hosting)
 
 - forceert `https://www.`
 - 301-redirects van oude WordPress-URL's (`/mobile/...`, `/projecten/page/2/`, feeds, datumarchieven, `?p=`)
