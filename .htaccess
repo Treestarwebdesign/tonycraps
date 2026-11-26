@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------
+# Tony Craps – statische site (Next.js export) op Apache / Cloudways
+# ---------------------------------------------------------------
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. Forceer https + www (zelfde canonieke URL als de oude site)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [R=301,L]
+
+# 2. Oude WordPress-URL's die niet meer bestaan -> 301 naar de nieuwe pagina
+RewriteRule ^mobile/projecten/?$            /projecten/ [R=301,L]
+RewriteRule ^mobile/?(.*)$                  /$1 [R=301,L]
+RewriteRule ^projecten/page/[0-9]+/?$       /projecten/ [R=301,L]
+RewriteRule ^projecten/projecten/?$         /projecten/ [R=301,L]
+RewriteRule ^portfolio/?$                   /projecten/ [R=301,L]
+RewriteRule ^(portfolio-category|project-type|category|tag|author)/.*$ /projecten/ [R=301,L]
+RewriteRule ^(feed|comments/feed)/?$        / [R=301,L]
+RewriteRule ^(.+)/feed/?$                   /$1/ [R=301,L]
+RewriteRule ^([0-9]{4})/([0-9]{2})/.*$      / [R=301,L]
+
+# Query-URL's van WordPress (?p=123, ?page_id=10, ?s=zoekterm)
+RewriteCond %{QUERY_STRING} (^|&)(p|page_id|s|attachment_id|cat)= [NC]
+RewriteRule ^$ /? [R=301,L]
+
+# 3. WordPress/PHP-endpoints bestaan niet meer: 410 Gone (bots stoppen sneller met proberen)
+RewriteRule ^(wp-admin|wp-includes)(/.*)?$  - [G,L]
+RewriteRule ^(wp-login|xmlrpc|wp-cron|wp-comments-post|wp-signup|wp-trackback)\.php$ - [G,L]
+RewriteRule \.php$                          - [G,L]
+
+# 4. URL zonder afsluitende slash -> met slash (zoals WordPress deed)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+# Geen PHP uitvoeren, ook niet als er ooit een .php-bestand wordt geüpload
+<FilesMatch "\.(php|phtml|phar)$">
+  Require all denied
+</FilesMatch>
+
+# ---------- Beveiligingsheaders ----------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+  # Caching: gehashte Next.js-bestanden en foto's lang, HTML kort
+  <FilesMatch "\.(js|css|woff2?|jpg|jpeg|png|gif|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json image/svg+xml text/xml application/xml text/plain
+</IfModule>

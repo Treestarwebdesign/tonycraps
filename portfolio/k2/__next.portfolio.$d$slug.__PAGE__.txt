@@ -1,0 +1,33 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0w3nb69uz5hx4.js"
+3:I[87771,["$2"],"default"]
+4:I[39756,["$2"],"default"]
+5:I[37457,["$2"],"default"]
+6:I[22016,["$2"],""]
+f:"/_next/static/chunks/1agmxjgrz7mh3.js"
+10:I[52002,["$2","$f"],"default"]
+11:I[789,["$2","$f"],"default"]
+12:I[97367,["$2"],"OutletBoundary"]
+13:"$Sreact.suspense"
+16:"ViewportBoundary"
+17:I[97367,["$2"],"$16"]
+18:"MetadataBoundary"
+19:I[97367,["$2"],"$18"]
+:HL["/_next/static/chunks/2ocoxbo6tvc46.css","style"]
+8:X
+b:X
+b:C
+e:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$L10",null,{"dots":true,"slides":[{"image":"/wp-content/uploads/2013/01/foto119.jpg","alt":"K2 – Klassieke woningbouw – School (foto 1)"},{"image":"/wp-content/uploads/2013/01/foto219.jpg","alt":"K2 – Klassieke woningbouw – School (foto 2)"},{"image":"/wp-content/uploads/2013/01/foto319.jpg","alt":"K2 – Klassieke woningbouw – School (foto 3)"},{"image":"/wp-content/uploads/2013/01/foto413.jpg","alt":"K2 – Klassieke woningbouw – School (foto 4)"}],"children":["$","$L11",null,{"title":"K2","description":"Klassieke woningbouw – School"}]}],[["$","script","script-0",{"src":"/_next/static/chunks/1agmxjgrz7mh3.js","async":true}]],["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}],"p":"$@15","v":null,"s":"$8"}}]]
+c:[["children",{"s":{"n":"slug","t":"d","k":"k2","s":[]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@d","v":"$b","s":"$8"},"c":"$Qe"}]]
+9:[["children",{"s":"portfolio","h":131168,"d":{"r":["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@a","v":"$b","s":"$8"},"c":"$Qc"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2ocoxbo6tvc46.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0w3nb69uz5hx4.js","async":true}]],["$","html",null,{"lang":"nl-BE","className":"qJOmXG_variable","children":["$","body",null,{"children":[["$","$L3",null,{}],["$","main",null,{"className":"mainbody","children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}],"notFound":[["$","div",null,{"className":"page","style":{"backgroundImage":"url(/wp-content/uploads/2012/06/projecten.jpg)"},"children":[["$","div",null,{"className":"lines","aria-hidden":true}],["$","div",null,{"className":"contentarea","children":[["$","div",null,{"className":"pagename","children":["$","h1",null,{"children":["$","span",null,{"children":"Pagina niet gevonden"}]}]}],["$","div",null,{"className":"smallpage pagebg","children":[["$","p",null,{"children":"Deze pagina bestaat niet (meer)."}],["$","p",null,{"children":[["$","$L6",null,{"href":"/projecten/","children":"Bekijk onze projecten"}]," of ga terug naar de ",["$","$L6",null,{"href":"/","children":"homepage"}],"."]}]]}]]}]]}],[]]}]}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Tony Craps: Architectenbureau\",\"url\":\"https://www.tonycraps.be\",\"telephone\":\"+3214301904\",\"email\":\"info@tonycraps.be\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Heikant 69\",\"postalCode\":\"2450\",\"addressLocality\":\"Meerhout\",\"addressCountry\":\"BE\"}}"}}]]}]}]]}],"p":"$@7","v":null,"s":"$8"},"c":"$Q9"},"h":{"r":["$","$1","h",{"children":[null,["$","$L17",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$13",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"K2 | Tony Craps: Architectenbureau"}],["$","meta","1",{"name":"description","content":"Klassieke woningbouw – School"}],["$","link","2",{"rel":"canonical","href":"https://www.tonycraps.be/portfolio/k2/"}],["$","meta","3",{"property":"og:title","content":"K2 | Tony Craps: Architectenbureau"}],["$","meta","4",{"property":"og:description","content":"Klassieke woningbouw – School"}],["$","meta","5",{"property":"og:image","content":"https://www.tonycraps.be/wp-content/uploads/2013/01/foto119.jpg"}],["$","meta","6",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","7",{"name":"twitter:title","content":"K2 | Tony Craps: Architectenbureau"}],["$","meta","8",{"name":"twitter:description","content":"Klassieke woningbouw – School"}],["$","meta","9",{"name":"twitter:image","content":"https://www.tonycraps.be/wp-content/uploads/2013/01/foto119.jpg"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1a","v":null,"s":"$8"}},"a":"$@1b","u":"$@1c","b":"AJW3GuH36BmUPS-ZLoRIq"}
+14:null
+8:300
+1c:true
+8:C
+1b:0
+d:"$undefined"
+a:"$undefined"
+7:"$undefined"
+1a:"$undefined"
+15:"$undefined"

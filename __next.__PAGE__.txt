@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0w3nb69uz5hx4.js"
+3:I[87771,["$2"],"default"]
+4:I[39756,["$2"],"default"]
+5:I[37457,["$2"],"default"]
+6:I[22016,["$2"],""]
+a:"/_next/static/chunks/27jye0911s_fo.js"
+b:I[52002,["$2","$a"],"default"]
+c:I[97367,["$2"],"OutletBoundary"]
+d:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$2"],"$10"]
+12:"MetadataBoundary"
+13:I[97367,["$2"],"$12"]
+:HL["/_next/static/chunks/2ocoxbo6tvc46.css","style"]
+8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$Lb",null,{"slides":[{"image":"/wp-content/uploads/2012/06/hedendaags.jpg","alt":"Hedendaagse architectuur","href":"/portfolio/hedendaags/","caption":{"sub":"Tony Craps: Architectenbureau","title":"Hedendaagse architectuur","button":{"href":"/projecten/","label":"Bekijk projecten"}}},{"image":"/wp-content/uploads/2012/06/industriebouw.jpg","alt":"Industriebouw","href":"/portfolio/industriebouw/","caption":{"sub":"Tony Craps: Architectenbureau","title":"Industriebouw","button":{"href":"/projecten/","label":"Bekijk projecten"}}},{"image":"/wp-content/uploads/2012/06/verbouwingen.jpg","alt":"Verbouwingen","href":"/portfolio/verbouwingen/","caption":{"sub":"Tony Craps: Architectenbureau","title":"Verbouwingen","button":{"href":"/projecten/","label":"Bekijk projecten"}}},{"image":"/wp-content/uploads/2012/06/klassiek.jpg","alt":"Klassieke woningen","href":"/portfolio/klassieke-woningbouw/","caption":{"sub":"Tony Craps: Architectenbureau","title":"Klassieke woningen","button":{"href":"/projecten/","label":"Bekijk projecten"}}}]}],[["$","script","script-0",{"src":"/_next/static/chunks/27jye0911s_fo.js","async":true}]],["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}],"p":"$@f","v":null,"s":"$8"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2ocoxbo6tvc46.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0w3nb69uz5hx4.js","async":true}]],["$","html",null,{"lang":"nl-BE","className":"qJOmXG_variable","children":["$","body",null,{"children":[["$","$L3",null,{}],["$","main",null,{"className":"mainbody","children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}],"notFound":[["$","div",null,{"className":"page","style":{"backgroundImage":"url(/wp-content/uploads/2012/06/projecten.jpg)"},"children":[["$","div",null,{"className":"lines","aria-hidden":true}],["$","div",null,{"className":"contentarea","children":[["$","div",null,{"className":"pagename","children":["$","h1",null,{"children":["$","span",null,{"children":"Pagina niet gevonden"}]}]}],["$","div",null,{"className":"smallpage pagebg","children":[["$","p",null,{"children":"Deze pagina bestaat niet (meer)."}],["$","p",null,{"children":[["$","$L6",null,{"href":"/projecten/","children":"Bekijk onze projecten"}]," of ga terug naar de ",["$","$L6",null,{"href":"/","children":"homepage"}],"."]}]]}]]}]]}],[]]}]}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"name\":\"Tony Craps: Architectenbureau\",\"url\":\"https://www.tonycraps.be\",\"telephone\":\"+3214301904\",\"email\":\"info@tonycraps.be\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Heikant 69\",\"postalCode\":\"2450\",\"addressLocality\":\"Meerhout\",\"addressCountry\":\"BE\"}}"}}]]}]}]]}],"p":"$@7","v":null,"s":"$8"},"c":"$Q9"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L13",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Tony Craps: Architectenbureau"}],["$","meta","1",{"name":"description","content":"Tony Craps Architectenbureau in Meerhout: hedendaagse architectuur, klassieke woningbouw, verbouwingen en industriebouw."}],["$","link","2",{"rel":"canonical","href":"https://www.tonycraps.be/"}],["$","meta","3",{"property":"og:title","content":"Tony Craps: Architectenbureau"}],["$","meta","4",{"property":"og:description","content":"Tony Craps Architectenbureau in Meerhout: hedendaagse architectuur, klassieke woningbouw, verbouwingen en industriebouw."}],["$","meta","5",{"property":"og:site_name","content":"Tony Craps: Architectenbureau"}],["$","meta","6",{"property":"og:locale","content":"nl_BE"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Tony Craps: Architectenbureau"}],["$","meta","10",{"name":"twitter:description","content":"Tony Craps Architectenbureau in Meerhout: hedendaagse architectuur, klassieke woningbouw, verbouwingen en industriebouw."}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@14","v":null,"s":"$8"}},"a":"$@15","u":"$@16","b":"AJW3GuH36BmUPS-ZLoRIq"}
+e:null
+8:300
+16:true
+8:C
+15:0
+7:"$undefined"
+14:"$undefined"
+f:"$undefined"
