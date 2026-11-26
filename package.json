@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "fetch-images": "node scripts/fetch-images.mjs",
-    "preview": "npx --yes serve out -l 4000"
+    "preview": "npx --yes serve out -l 4000",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "next": "16.4.6",

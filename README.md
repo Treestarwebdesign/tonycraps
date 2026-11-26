@@ -37,6 +37,15 @@ npm run preview      # out/ lokaal testen op http://localhost:4000
 
 ## Deployen op Cloudways
 
+### Met het deploy-script (SSH + rsync)
+
+1. Kopieer `.deploy.env.example` naar `.deploy.env` en vul `DEPLOY_APP` in (de map-id van de app onder `~/applications/`).
+2. `npm run deploy -- --dry-run` toont wat er zou veranderen.
+3. `npm run deploy` bouwt de site en zet `out/` (inclusief `.htaccess`) in `public_html`.
+   Bestanden die niet in `out/` staan worden op de server verwijderd.
+
+### Manueel
+
 1. Maak in Cloudways een applicatie aan van het type **PHP (Custom App)** – dat geeft een kale Apache/Nginx-webroot
    (er draait geen PHP-code, het is enkel de webserver).
 2. Upload de **inhoud** van `out/` naar `public_html/` van die applicatie, via SFTP (Application Credentials) of:
