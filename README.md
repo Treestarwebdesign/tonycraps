@@ -10,7 +10,7 @@ Na de build is het pure HTML/CSS/JS in de map `out/`: geen PHP, geen database, g
 | `/` | `app/page.tsx` – fullscreen slideshow met de 4 categorieën |
 | `/projecten/` | `app/projecten/page.tsx` – raster van 36 projecten met filter |
 | `/portfolio/<slug>/` | `app/portfolio/[slug]/page.tsx` – fullscreen foto's per project + "Meer info" |
-| `/contact/` | `app/contact/page.tsx` – adres + contactformulier |
+| `/contact/` | `app/contact/page.tsx` – adres, telefoon en e-mail (geen formulier) |
 
 Alle inhoud (titels, omschrijvingen, foto's) staat in **`lib/content.json`**.
 Een project toevoegen = een blok toevoegen in dat bestand + de foto's in `public/wp-content/uploads/...` zetten.
@@ -27,20 +27,6 @@ npm run dev            # lokaal bekijken op http://localhost:3000
 ```
 
 `fetch-images` moet gebeuren **zolang de oude WordPress-site nog online is**. Daarna staan de foto's in het project zelf.
-
-## Contactformulier
-
-Een statische site kan zelf geen mail versturen. Twee opties:
-
-1. **Formulierdienst (aanbevolen)** – bv. [Formspree](https://formspree.io) (gratis tot 50 berichten/maand), Basin of Getform.
-   Maak een formulier aan met `info@tonycraps.be` als ontvanger en zet het endpoint in `.env.production`:
-   ```
-   NEXT_PUBLIC_FORM_ENDPOINT=https://formspree.io/f/xxxxxxxx
-   ```
-   Daarna opnieuw `npm run build`.
-2. **Zonder endpoint** opent "Verstuur bericht" het mailprogramma van de bezoeker met het bericht ingevuld (mailto-fallback).
-
-Er zit een honeypot-veld in tegen spam.
 
 ## Bouwen
 
@@ -77,7 +63,8 @@ npm run preview      # out/ lokaal testen op http://localhost:4000
 
 ## Wat bewust anders is dan op de oude site
 
-- Commentaarformulieren onder projecten, zoekvak en sociale deelknoppen zijn weggelaten (vereisen PHP of werden niet gebruikt).
+- Geen contactformulier meer: de contactpagina toont adres, klikbaar telefoonnummer en e-mailadres.
+- Commentaarformulieren onder projecten, zoekvak en sociale deelknoppen zijn weggelaten.
 - Google Analytics (oude `UA-`-code werkt sinds 2023 niet meer) is weggelaten; voeg indien gewenst GA4 of Plausible toe in `app/layout.tsx`.
 - Lettertype PT Sans wordt zelf gehost (geen verbinding met Google Fonts, beter voor GDPR).
 - Meta descriptions en Schema.org-gegevens (adres, telefoon) toegevoegd voor SEO; de oude site had er geen.

@@ -172,7 +172,7 @@ button { font: inherit; cursor: pointer; }
 .smallpage { max-width: 600px; }
 .pagebg { background: #fff; padding: 20px; }
 .pagebg .h3 { font-size: 16px; color: #222; margin: 0 0 10px; font-weight: 700; }
-address { font-style: normal; margin-bottom: 20px; font-size: 13px; line-height: 20px; }
+address { font-style: normal; margin: 0; font-size: 13px; line-height: 20px; }
 
 /* Filter + grid */
 .filterwrap { background: #fff; padding: 10px; margin-bottom: 20px; }
@@ -194,18 +194,6 @@ address { font-style: normal; margin-bottom: 20px; font-size: 13px; line-height:
 .portfoliothumb h2 a:hover { color: var(--accent); text-decoration: none; }
 .portfoliothumb p { margin: 0; }
 
-/* Contactformulier */
-.contactform label { display: block; margin: 0 0 4px; font-weight: 700; color: #333; }
-.contactform input, .contactform textarea {
-  width: 100%; border: 1px solid #ddd; background: #fafafa; padding: 8px; margin: 0 0 14px;
-  font: inherit; font-size: 13px; color: #333;
-}
-.contactform input:focus, .contactform textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; background: #fff; }
-.formrow { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
-.contactform .hp { position: absolute; left: -9999px; }
-.formmessage { padding: 10px 12px; margin: 14px 0 0; font-size: 13px; }
-.formmessage.ok { background: #e6f6fd; color: #135e7e; }
-.formmessage.error { background: #fdecea; color: #8a1f11; }
 
 @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
 @keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
@@ -231,7 +219,6 @@ address { font-style: normal; margin-bottom: 20px; font-size: 13px; line-height:
   .subheadline span { font-size: 13px; }
   .page { background-attachment: scroll; }
   .pagename span { font-size: 28px; }
-  .formrow { grid-template-columns: 1fr; }
   .arrow { width: 40px; }
 }
 

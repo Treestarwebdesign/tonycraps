@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import ContactForm from '@/components/ContactForm';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function Contact() {
             <br />
             <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
           </address>
-          <ContactForm />
         </div>
       </div>
     </div>
